@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffef82;
+}
+.grid {
+  width: 90%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  background: #babd42;
+  box-shadow: 0 2px 5px #3c4817;
+  border-radius: 20px;
+}
+
+#startAnimation {
+  display: none;
+  width: 350px;
+  height: 350px;
+  bottom: 80px;
+  background-image: url("Untitled-1.png");
+  background-position: center;
+  background-size: contain;
+  transition: 3s ease-in-out;
+}
+
+#endAnimation {
+  display: block;
+  width: 180px;
+  height: 180px;
+  background-image: url("Untitled-2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  height: 90%;
+}
+
+button {
+  width: 300px;
+  height: 50px;
+  background-color: #82954b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: nunito;
+  font-weight: bold;
+  font-size: 1.5em;
+  box-shadow: 0 2px 5px #3c4817;
+}
+button:hover {
+  cursor: pointer;
+  background: #efd345;
+  color: #3c4817;
+  border: 3px solid #3c4817;
+  box-shadow: 0 2px 5px #3c4817;
+}
+
+hr {
+  width: 80%;
+  border: 2px solid #3c4817;
+  box-shadow: none;
+}
+
+#header {
+  font-family: nunito;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#question {
+  font-family: nunito;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+}
+
+#footer {
+  font-family: nunito;
+  font-weight: bold;
+  color: #3c4817;
+  padding-top: 30px;
+}
+
+#progress {
+  font-weight: bold;
+  color: white;
+}
+
+#rezultatas {
+  font-family: nunito;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  width: 70%;
+  transition: 1s linear;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 640px) {
+  button {
+    width: 180px;
+    height: 50px;
+    font-size: 1em;
+  }
+  #startAnimation {
+    width: 200px;
+    height: 200px;
+  }
+
+  #endAnimation {
+    width: 120px;
+    height: 120px;
+  }
+
+  #header {
+    font-size: 1.5em;
+  }
+  #question,
+  #rezultatas {
+    font-size: 2em;
+  }
+
+  #rezultatas {
+    width: 70%;
+  }
+}
